@@ -10,9 +10,13 @@ Some months ago i bought the new **Microsoft Flight Simulator 2020** and after a
 
 Furthermore, i had long wanted to try to build my own additional panel for the simulator using one of the Arduino Nano that i had in my drawer: and so i started this project that is the first and the simple one of my (two) DIY panels for the Flight Simulator.
 
-**The architecture**
+## **The architecture**
 
-In the following picture you can see **3 components**: the switching panel (with Arduino and some buttons and LEDs), a sort of "bridge" program for the bidirectional communications with FS and the Flight Simulator itself. 
-The panel reads some parameters and send some commands to FS using the FS2020TA.exe (you will find a link to for FS2020 at the end) as a sort of communication "repeater" and Arduino communicates with the PC and **FS2020TA.exe** using a standard USB port.
+In the following picture you can see **3 components**: 
+1. the switching panel (with Arduino and some buttons and LEDs)
+2. a sort of "bridge" program managing the bidirectional communications with FS
+3. the Flight Simulator itself
+
+The panel reads parameters and send commands to FS using the **FS2020TA.exe** (you will find a link to for FS2020 at the end) as a sort of communication "repeater" and Arduino communicates with the PC and FS2020TA.exe (that uses a SimConnect.dll) using a standard USB port.
 
 <img src="https://user-images.githubusercontent.com/94467184/142736651-6c75b9a9-ad6f-494a-b993-45f7de33e24a.jpg" width="70%" height="70%">
