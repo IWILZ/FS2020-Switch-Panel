@@ -32,10 +32,10 @@ Of course you can choose to use a different number of buttons and LEDs adapting 
 
 In the following picture you can see **3 components**: 
 1. the switching panel (with Arduino and some buttons and LEDs)
-2. a sort of "bridge" program managing the bidirectional communications with FS
+2. a program (FS2020TA.exe) that manages the bidirectional communications with FS (you will find a link to that program at the end of this document)
 3. the Flight Simulator itself
 
-The panel reads parameters and send commands to FS using the **FS2020TA.exe** (you will find a link to for FS2020 at the end) as a sort of communication "repeater" and Arduino communicates with the PC and FS2020TA.exe (that uses a SimConnect.dll) using a standard USB port. The communication protocol is very simple and will be explaned later.
+The panel reads values and send commands to FS using the **FS2020TA.exe** (made by Seahawk240) as a sort of communication "repeater". The Arduino board communicates with the PC and FS2020TA.exe (that uses a SimConnect.dll) using a standard USB port. The communication protocol is very simple and will be explaned later.
 
 <img src="https://user-images.githubusercontent.com/94467184/142736651-6c75b9a9-ad6f-494a-b993-45f7de33e24a.jpg" width="70%" height="70%">
 
