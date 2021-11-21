@@ -6,6 +6,8 @@ A simple external switches and LEDs panel to manage some FS2020 (for PC) airplan
 
 If you are a Flight Simulator enthusiast and would try to build your first external panel to send some commands and read some status from FS, probably you will be interested in this project because **it's simple, flexible and cheap**.
 
+A short video here: https://www.youtube.com/watch?v=05aUgwHtf3Q
+
 ## **Why this project**
 I'm quite a beginner in the Arduino world but i'm also really interested in flight both simulated and real (Ultralight Planes). Few years ago i bought 5 **Arduino Nano** to build a Star Tracker: a device capable to rotate at the same rotation speed of the earth. That project was a solution to take photos (with long exposures) of the stars during the night but for that project i used only 1 of my 5 Arduino boards.
 
