@@ -53,4 +53,4 @@ What you need is:
 Due to the small power consumption, **the panel is simply powered by the 5Vcc of the USB** connection and basically the only limit of the number of status LEDs and command buttons/switches is the number of I/O pin of the Arduino board you are using.
 
 In my case i used **9 buttons/switches + 6 status LEDs**.
-For the front of the panel i used a 15x8cm rectangle of a carbon fiber plate but you can use also a wood plate or anything else from about 1.5 to 3mm thick.
+For the front panel i used a 15x8cm rectangle of a carbon fiber plate but you can use also a wood plate or anything else from about 1.5 to 3mm thick.
