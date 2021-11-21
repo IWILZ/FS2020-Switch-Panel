@@ -10,6 +10,18 @@ Some months ago i bought the new **Microsoft Flight Simulator 2020** and after a
 
 Furthermore, i had long wanted to try to build my own additional panel for the simulator using one of the Arduino Nano that i had in my drawer: and so i started this project that is the first and the simple one of my (two) DIY panels for the Flight Simulator.
 
+## **What it does**
+The panel manages and shows the state of:
+1. flaps, incrementing/decrementing to max 4 positions
+2. navigation lights (grouped in STROBE, NAV, BEACON, WING, LOGO, CABIN and PANEL)
+3. landing lights (grouped in LANDING and TAXI)
+4. pitot heat
+5. rudder trim
+6. startup and shutdown the engine(s) with AUTO_START and AUTO_SHUTDOWN functions
+7. in addition i have also a RESET button that is useful when starting the flight to be sure about the state of all the lights of the plane
+
+Of course everyone can choose to use a different number of buttons and LEDs to manage different simulator commands and parameters.
+
 ## **The architecture**
 
 In the following picture you can see **3 components**: 
