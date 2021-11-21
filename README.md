@@ -12,7 +12,7 @@ Furthermore, i had long wanted to try to build my own additional panel for the s
 
 ## **What it does**
 The panel manages and shows the state of:
-1. incrementing/decrementing flaps (max 4 positions)
+1. flaps incrementing/decrementing them to max 4 positions
 2. navigation lights (grouped in STROBE, NAV, BEACON, WING, LOGO, CABIN and PANEL)
 3. landing lights (grouped in LANDING and TAXI)
 4. pitot heat
@@ -29,7 +29,7 @@ In the following picture you can see **3 components**:
 2. a sort of "bridge" program managing the bidirectional communications with FS
 3. the Flight Simulator itself
 
-The panel reads parameters and send commands to FS using the **FS2020TA.exe** (you will find a link to for FS2020 at the end) as a sort of communication "repeater" and Arduino communicates with the PC and FS2020TA.exe (that uses a SimConnect.dll) using a standard USB port. Tha communication protocol is very simple and will be explaned later.
+The panel reads parameters and send commands to FS using the **FS2020TA.exe** (you will find a link to for FS2020 at the end) as a sort of communication "repeater" and Arduino communicates with the PC and FS2020TA.exe (that uses a SimConnect.dll) using a standard USB port. The communication protocol is very simple and will be explaned later.
 
 <img src="https://user-images.githubusercontent.com/94467184/142736651-6c75b9a9-ad6f-494a-b993-45f7de33e24a.jpg" width="70%" height="70%">
 
