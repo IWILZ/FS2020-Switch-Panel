@@ -1,14 +1,20 @@
 # FS2020 - Switch Panel
-A simple external switches and LEDs panel to manage some FS2020 airplanes commands.
+A simple external switches and LEDs panel to manage some FS2020 (running on a Windows PC) airplanes commands.
 
 ![fig0](https://user-images.githubusercontent.com/94467184/142744166-63711825-c21c-4483-9d37-9ca438069cd0.jpg)
 
 
-I'm a beginner in the Arduino world but i'm also interested in flight both simulated and real (Ultra Light Planes). Few years ago i bought 5 **Arduino Nano** to build a Star Tracker: a device capable to rotate at the same rotation speed of the earth. That project was a solution to take photos (with a long exposure) of the stars during the night but for that project i used only 1 of 5 Arduino.
+If you are a Flight Simulator enthusiast and would try to build your first external panel to send some commands and read some status from FS, probably you will be interested in this project because it's simple and cheap.
 
-Some months ago i bought the new **Microsoft Flight Simulator 2020** and after a while i realized that i was having a hard time reading the status of some parameters and commands on the simulator. Consider that i wear reading glasses and compared to the old version (FS2004) some writings on the panels of the aircraft are smaller.
+## **Why this project**
+I'm quite a beginner in the Arduino world but i'm also really interested in flight both simulated and real (Ultra Light Planes). Few years ago i bought 5 **Arduino Nano** to build a Star Tracker: a device capable to rotate at the same rotation speed of the earth. That project was a solution to take photos (with long exposures) of the stars during the night but for that project i used only 1 of my 5 Arduino boards.
 
-Furthermore, i had long wanted to try to build my own additional panel for the simulator using one of the Arduino Nano that i had in my drawer: and so i started this project that is the first and the simple one of my (two) DIY panels for the Flight Simulator.
+Some months ago i bought the **Microsoft Flight Simulator 2020** and after a while i realized that i was having some problems for:
+1. reading the status of some parameters and values (for example on the Garmin display)
+2. managing some FS commands during the flight and using the mouse
+
+So in decided to start this first project using one of the Arduino Nano that i had in my drawer, to reach a good software architecture before building a more complex solution to manage and display also numeric values (like frequencies, altitude, air speed, etc) in a second project.
+
 
 ## **What it does**
 The panel manages and shows the state of:
