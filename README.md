@@ -20,3 +20,18 @@ In the following picture you can see **3 components**:
 The panel reads parameters and send commands to FS using the **FS2020TA.exe** (you will find a link to for FS2020 at the end) as a sort of communication "repeater" and Arduino communicates with the PC and FS2020TA.exe (that uses a SimConnect.dll) using a standard USB port.
 
 <img src="https://user-images.githubusercontent.com/94467184/142736651-6c75b9a9-ad6f-494a-b993-45f7de33e24a.jpg" width="70%" height="70%">
+
+## **What you need**
+What you need is:
+1. an ordinary Arduino board (not necessarily a Nano)
+2. some switches and/or buttons
+3. some LEDs and resistors 
+4. one or more small breadboards 
+5. a soldering iron
+6. some small section wires to connect switches and LEDs to the Arduino board
+
+![fig2](https://user-images.githubusercontent.com/94467184/142744891-d1c6cf09-d8b0-4657-97cb-fe291e369c9b.jpg)
+
+Due to the small power consumption, **the panel is simply powered by the 5Vcc of the USB** connection and basically the only limit of the number of status LEDs and command buttons/switches is the number of I/O pin of the Arduino board you are using.
+
+In my case i used **9 buttons/switches + 6 status LEDs**.
