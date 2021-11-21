@@ -4,7 +4,7 @@ A simple external switches and LEDs panel to manage some FS2020 airplanes comman
 ![fig0](https://user-images.githubusercontent.com/94467184/142744166-63711825-c21c-4483-9d37-9ca438069cd0.jpg)
 
 
-I'm a technician but i'm also interested in flight both simulated and real (Ultra Light Planes). Few years ago i bought 5 **Arduino Nano** to build a Star Tracker: a device capable to rotate at the same rotation speed of the earth. That project was a solution to take photos (with a long exposure) of the stars during the night but for that project i used only 1 of 5 Arduino.
+I'm a beginner in the Arduino world but i'm also interested in flight both simulated and real (Ultra Light Planes). Few years ago i bought 5 **Arduino Nano** to build a Star Tracker: a device capable to rotate at the same rotation speed of the earth. That project was a solution to take photos (with a long exposure) of the stars during the night but for that project i used only 1 of 5 Arduino.
 
 Some months ago i bought the new **Microsoft Flight Simulator 2020** and after a while i realized that i was having a hard time reading the status of some parameters and commands on the simulator. Consider that i wear reading glasses and compared to the old version (FS2004) some writings on the panels of the aircraft are smaller.
 
@@ -12,15 +12,15 @@ Furthermore, i had long wanted to try to build my own additional panel for the s
 
 ## **What it does**
 The panel manages and shows the state of:
-1. flaps, incrementing/decrementing to max 4 positions
+1. incrementing/decrementing flaps (max 4 positions)
 2. navigation lights (grouped in STROBE, NAV, BEACON, WING, LOGO, CABIN and PANEL)
 3. landing lights (grouped in LANDING and TAXI)
 4. pitot heat
 5. rudder trim
-6. startup and shutdown the engine(s) with AUTO_START and AUTO_SHUTDOWN functions
+6. engine(s) startup and shutdown with AUTO_START and AUTO_SHUTDOWN functions of simulator
 7. in addition i have also a RESET button that is useful when starting the flight to be sure about the state of all the lights of the plane
 
-Of course everyone can choose to use a different number of buttons and LEDs to manage different simulator commands and parameters.
+Of course you can choose to use a different number of buttons and LEDs adapting hardware and software to manage/show different simulator commands and parameters.
 
 ## **The architecture**
 
@@ -29,7 +29,7 @@ In the following picture you can see **3 components**:
 2. a sort of "bridge" program managing the bidirectional communications with FS
 3. the Flight Simulator itself
 
-The panel reads parameters and send commands to FS using the **FS2020TA.exe** (you will find a link to for FS2020 at the end) as a sort of communication "repeater" and Arduino communicates with the PC and FS2020TA.exe (that uses a SimConnect.dll) using a standard USB port.
+The panel reads parameters and send commands to FS using the **FS2020TA.exe** (you will find a link to for FS2020 at the end) as a sort of communication "repeater" and Arduino communicates with the PC and FS2020TA.exe (that uses a SimConnect.dll) using a standard USB port. Tha communication protocol is very simple and will be explaned later.
 
 <img src="https://user-images.githubusercontent.com/94467184/142736651-6c75b9a9-ad6f-494a-b993-45f7de33e24a.jpg" width="70%" height="70%">
 
