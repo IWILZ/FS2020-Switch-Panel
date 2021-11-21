@@ -54,3 +54,14 @@ Due to the small power consumption, **the panel is simply powered by the 5Vcc of
 
 In my case i used **9 buttons/switches + 6 status LEDs**.
 For the front panel i used a 15x8cm rectangle of a carbon fiber plate but you can use also a wood plate or anything else from about 1.5 to 3mm thick.
+
+## **Electrical connections of I/O**
+Every Arduino pin can be configured as an Input or an Output by the program so all it's very flexible. Obviously every LED connection has to be an Output and every button/switch an Input but in this last case you have to configure it like an "INPUT_PULLUP" pin to avoid problems with random status reading.
+
+In the following picture you can see how to connect a generic LED and a generic button.
+
+![fig3](https://user-images.githubusercontent.com/94467184/142747592-85055ccf-bf22-468f-97f8-a19cade9ffb0.jpg)
+
+IMPORTANT: **DON'T CONNECT A LED DIRECTLY to the Arduino** to avoid a damage of the micro controller itself, but you have to **use a resistor to limit the current** flowing to the LED. **The resistor value depends on the LED brand and colour** (for example red ones needs a less value resistor than green ones) but you could start with a value of **1KOhm** and then find the right value for your LEDs.
+
+For the buttons you just need to choose those "normally opened" so they will "close the circuit" only when pressed.
