@@ -1,4 +1,4 @@
-# FS2020 - Switch Panel
+# FS2020 - Switch Panel with Arduino
 A simple external switches and LEDs panel to manage some FS2020 (for PC) airplanes commands.
 
 ![fig0](https://user-images.githubusercontent.com/94467184/142744166-63711825-c21c-4483-9d37-9ca438069cd0.jpg)
