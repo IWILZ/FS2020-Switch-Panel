@@ -9,9 +9,9 @@ If you are a Flight Simulator enthusiast and would try to build your first exter
 ## **Why this project**
 I'm quite a beginner in the Arduino world but i'm also really interested in flight both simulated and real (Ultra Light Planes). Few years ago i bought 5 **Arduino Nano** to build a Star Tracker: a device capable to rotate at the same rotation speed of the earth. That project was a solution to take photos (with long exposures) of the stars during the night but for that project i used only 1 of my 5 Arduino boards.
 
-Some months ago i bought the **Microsoft Flight Simulator 2020** and after a while i realized that i was having some problems for:
+Some months ago i bought the **Microsoft Flight Simulator 2020** and i use it with a Saitek X52 (so i have a lot of buttons for the main commands) but after a while i realized that i was having some problems for:
 1. reading the status of some parameters and values (for example on the Garmin display)
-2. managing some FS commands during the flight and using the mouse
+2. managing other FS commands using the mouse during the flight 
 
 So in decided to start this first project using one of the Arduino Nano that i had in my drawer, to reach a good software architecture before building a more complex solution to manage and display also numeric values (like frequencies, altitude, air speed, etc) in a second project.
 
