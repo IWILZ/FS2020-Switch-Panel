@@ -60,10 +60,10 @@ For the front panel i used a 15x8cm rectangle of a carbon fiber plate but you ca
 ## **Input/Output connections**
 Every Arduino pin can be configured as an Input or an Output by the program so all it's very flexible. Obviously every LED connection has to be an Output and every button/switch an Input but in this last case you have to configure it like an "INPUT_PULLUP" pin to avoid problems with random status reading.
 
-In the following picture you can see how to connect a generic LED and a generic button.
+In the following picture you can see how to connect a generic LED and a generic button/switch.
 
 ![fig3](https://user-images.githubusercontent.com/94467184/142747592-85055ccf-bf22-468f-97f8-a19cade9ffb0.jpg)
 
-**IMPORTANT:** to avoid a damage of the micro controller itself **DON'T CONNECT A LED DIRECTLY to the Arduino**, but **use a resistor to limit the current** flowing to the LED. **The resistor value depends on the LED brand and colour** (normally red ones need a less value resistor than green ones) but you could start with a value of **1KOhm** and then find the right value for your LEDs. If you have a tester you could measure the current flowing to the LED considering that the maximum current on a output PIN of the Arduino cannot **never exceed 20mA**.
+**IMPORTANT:** to avoid a damage of the micro controller itself **DON'T CONNECT A LED DIRECTLY to the Arduino**, but **use a resistor to limit the current** flowing to the LED. **The resistor value depends on the LED brand and colour** (normally red ones need a less value resistor than green ones) but you could start with a value of **1KOhm** and then change it to find the right value/light for your LED. If you have a tester you can also measure the current flowing into the LED considering that the maximum current on a output PIN of the Arduino cannot **never exceed 20mA**.
 
 For the buttons you just need to choose those "normally opened" so they will "close the circuit" to the ground only when pressed.
