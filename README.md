@@ -58,7 +58,7 @@ In my case i used **9 buttons/switches + 6 status LEDs**.
 For the front panel i used a 15x8cm rectangle of a carbon fiber plate but you can use also a wood plate or anything else from about 1.5 to 3mm thick.
 
 ## **Input/Output connections**
-Every Arduino pin can be configured as an Input or an Output by the program so all it's very flexible. Obviously every LED connection has to be an Output and every button/switch an Input but in this last case you have to configure it like an "INPUT_PULLUP" pin to avoid problems with random status reading.
+Every Arduino pin can be configured as an Input or an Output by the program so all it's very flexible. Obviously every LED connection has to be an Output (any output pin produces a 5Vcc when in high level) and every button/switch an Input but in this last case the program have to configure it like an "INPUT_PULLUP" pin to avoid problems with random status reading.
 
 In the following picture you can see how to connect a generic LED and a generic button/switch.
 
@@ -66,4 +66,4 @@ In the following picture you can see how to connect a generic LED and a generic 
 
 **IMPORTANT:** to avoid a damage of the micro controller itself **DON'T CONNECT A LED DIRECTLY to the Arduino**, but **use a resistor to limit the current** flowing to the LED. **The resistor value depends on the LED brand and colour** (normally red ones need a lower value resistor than green ones) but you could start with a value of **1KOhm** and then change it to find the right value/light for your LED. If you have a tester you can also measure the current flowing into the LED considering that the maximum current on a output PIN of the Arduino cannot **never exceed 20mA**. If you cannot measure the current, just look at your LED's light and don't exceed with its brightness. 
 
-For the buttons you just need to choose those "normally opened" so they will "close the circuit" to the ground only when pressed.
+For the buttons you should choose those "normally opened" so they will "close the circuit" to the ground only when pressed.
