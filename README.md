@@ -90,7 +90,7 @@ The communications is made simply sending and receiving strings over the USB con
 ### Receiving values/parameters from FS
 Every parameter is received as a string using "Serial.readStringUntil()" and the format is **"@ID/index=value$"** where '@', '/' and '$' are markers to identify the 3 field "**ID**", "**index**" and "**value**". 
 1. **ID** = idientifies each parameter
-2. **index** = idientifies different objects having the same parameter (for example index=1 for the "active frequency" of NAV1 and index=2 is the same for NAV2)
+2. **index** = idientifies different objects having the same parameter. For example when ID=502 (NAV_ACTIVE_FREQUENCY), index=1 is for the frequency of NAV1 and index=2 is the same for NAV2.
 3. **value** = is the value itself and can be interpreted as an integer, float, string, degree, boolean, etc depending of the kind of parameter
 
 Of course depending on the "ID" value, the program has to manage "value" converting it from a string to a number if necessary.
