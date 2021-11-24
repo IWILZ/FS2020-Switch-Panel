@@ -78,7 +78,7 @@ Each button should be "normally opened" so it will "close the circuit" to the gr
 Yes this is the software "bridge" to make a bi-directional communication between Arduino and FS2020. 
 The program is free, was developed by **Matthias Schaaf** and can be dwonloaded from: https://github.com/Seahawk240/Microsoft-FS2020-To-Arduino
 
-FS2020TA.exe (wich uses SimConnect.dll) is very simple and strong and the communication is made using standard **Serial** functions. To get informations from FS you have to make a sort of list before and then you will use **Serial.readStringUntil()** into the Arduino sketch. In the same way to send commands you simply have to use **Serial.print()**.
+FS2020TA.exe (wich uses SimConnect.dll) is very simple and strong and the communication is made using standard **Serial** functions. To get informations from FS you have to make a sort of list within FS2020TA and then you will use **Serial.readStringUntil()** into the Arduino sketch. In the same way to send commands you simply have to use **Serial.print()**.
 
 You can also find a video description here: https://www.youtube.com/watch?v=EVqY8KhdZI8 and for more informations, please read the official documentation from Matthias Schaaf.
 
