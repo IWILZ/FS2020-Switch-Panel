@@ -108,7 +108,7 @@ In this project all we need are the following IDs:
 
 **Just few words about LIGHT_STATES**
 
-LIGHT_STATESt is a (unsigned int) binary mask using 10 bits showing the state of every light of the plane with the following meaning:
+LIGHT_STATES is a (unsigned int) binary mask using 10 bits showing the state of every light of the plane with the following meaning:
 ```
 // --00 0000 0000 -> *********** ALL LIGHTS OFF *********** 
 // --11 1111 1111 -> *********** ALL LIGHTS ON  *********** 
