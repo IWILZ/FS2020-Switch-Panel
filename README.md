@@ -80,7 +80,9 @@ The program is free, was developed by **Matthias Schaaf** and can be dwonloaded 
 
 FS2020TA.exe (wich uses SimConnect.dll) is very simple and strong and the communication is made using standard **Serial** functions. To get informations from FS you have to make a sort of list before and then you will use **Serial.readStringUntil()** into the Arduino sketch. In the same way to send commands you simply have to use **Serial.print()**.
 
-For more informations, please read the official documentation from Matthias Schaaf.
+You can also find a video description here: https://www.youtube.com/watch?v=EVqY8KhdZI8 and for more informations, please read the official documentation from Matthias Schaaf.
+
+About FS2020 variables, you can also find some useful info here: https://docs.flightsimulator.com/html/index.htm#t=Programming_Tools%2FSimVars%2FSimulation_Variables.htm
 
 ## **Where to buy components**
 Sorry, coming soon.
