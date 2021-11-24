@@ -34,7 +34,7 @@ Of course you can choose to use a different number of buttons and LEDs adapting 
 
 In the following picture you can see **3 components**: 
 1. the switching panel (with Arduino and some buttons and LEDs)
-2. a program (FS2020TA.exe) that manages the bidirectional communications with FS (you will find a link to that program at the end of this document)
+2. a program (FS2020TA.exe) that manages the bidirectional communications with FS (you will find a link to this program later in this document)
 3. the Flight Simulator itself
 
 The panel reads values and send commands to FS using the **FS2020TA.exe** (made by Seahawk240) as a sort of communication "repeater". The Arduino board communicates with the PC and FS2020TA.exe (that uses a SimConnect.dll) using a standard USB port. The communication protocol is very simple and will be explaned later.
@@ -83,6 +83,16 @@ FS2020TA.exe (wich uses SimConnect.dll) is very simple and strong and the commun
 You can also find a video description here: https://www.youtube.com/watch?v=EVqY8KhdZI8 and for more informations, please read the official documentation from Matthias Schaaf.
 
 About FS2020 variables, you can also find some useful info here: https://docs.flightsimulator.com/html/index.htm#t=Programming_Tools%2FSimVars%2FSimulation_Variables.htm
+
+## **The communication protocol with FS2020TA**
+The communications is made simply sending and receiving strings over the USB connection of the PC. 
+
+**The sintax of a parameter received** is **"@ID/index=value$"** where '@', '/' and '$' are markers to identify the 3 values "**ID**", "**index**" and "**value**". 
+1. **ID** = idientifies each parameter
+2. **index** = idientifies different objects having the same parameter (for example index=1 for the "active frequency" of NAV1 but index=2 for NAV2)
+3. **value** = is the value itself and can be an integer, float, string, degree, boolean, etc depending of the kind of parameter
+
+Of course depending on the "ID" value, the program has to manage "value" converting it from a string to a number if necessary.
 
 ## **Define of I/O pins**
 Just to give you a bit more informations, i will show you wich pin i use in my project, but if you want change your Arduino board or for some other reasons you want to change your pins you will just change their "defines" accordingly.
