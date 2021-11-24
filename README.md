@@ -87,12 +87,55 @@ About FS2020 variables, you can also find some useful info here: https://docs.fl
 ## **The communication protocol with FS2020TA**
 The communications is made simply sending and receiving strings over the USB connection of the PC. 
 
-**The sintax of a parameter received** is **"@ID/index=value$"** where '@', '/' and '$' are markers to identify the 3 values "**ID**", "**index**" and "**value**". 
+### Receive values
+The sintax of a parameter received is **"@ID/index=value$"** where '@', '/' and '$' are markers to identify the 3 values "**ID**", "**index**" and "**value**". 
 1. **ID** = idientifies each parameter
 2. **index** = idientifies different objects having the same parameter (for example index=1 for the "active frequency" of NAV1 but index=2 for NAV2)
 3. **value** = is the value itself and can be an integer, float, string, degree, boolean, etc depending of the kind of parameter
 
 Of course depending on the "ID" value, the program has to manage "value" converting it from a string to a number if necessary.
+
+In this project all we need are the following IDs:
+```
+/*************************************************************
+              Parameter IDs from FS2020
+ *************************************************************/
+#define FLAPS_HANDLE_INDEX      247       // Flaps position (1...4)
+#define LIGHT_NAV               468       // LIGHT NAV
+#define LIGHT_LANDING           464       // LIGHT LANDING
+#define LIGHT_STATES            474       // Light status mask
+```
+
+### Send commands
+To send a command to FS you have just to send a string using **Serial.print()** and this is the list of all the commands we need:
+```
+/*************************************************************
+              Definition of commands to FS2020
+ *************************************************************/
+#define FLAPS_INCR            "@289/$"  // 
+#define FLAPS_DECR            "@287/$"  // 
+#define ENGINE_AUTO_SHUTDOWN  "@272/$"  //
+#define ENGINE_AUTO_START     "@273/$"  //
+#define PITOT_HEAT_ON         "@620/$"  //
+#define PITOT_HEAT_OFF        "@619/$"  //
+#define RUDDER_TRIM_LEFT      "@722/$"  //
+#define RUDDER_TRIM_RIGHT     "@723/$"  //
+
+// --------------- Lights ------------------
+#define LANDING_LIGHTS_ON     "@464/$"  //
+#define LANDING_LIGHTS_OFF    "@463/$"  //
+#define STROBES_ON            "@787/$"  //
+#define STROBES_OFF           "@786/$"  //
+#define PANEL_LIGHTS_ON       "@611/$"  //
+#define PANEL_LIGHTS_OFF      "@610/$"  //
+
+#define TOGGLE_BEACON_LIGHTS  "@854/$"  // 
+#define TOGGLE_LOGO_LIGHTS    "@884/$"  // 
+#define TOGGLE_NAV_LIGHTS     "@889/$"  // 
+#define TOGGLE_WING_LIGHTS    "@918/$"  // 
+#define TOGGLE_TAXI_LIGHTS    "@910/$"  // 
+#define TOGGLE_CABIN_LIGHTS   "@855/$"  // 
+```
 
 ## **Define of I/O pins**
 Just to give you a bit more informations, i will show you wich pin i use in my project, but if you want change your Arduino board or for some other reasons you want to change your pins you will just change their "defines" accordingly.
