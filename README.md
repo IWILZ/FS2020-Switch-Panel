@@ -33,9 +33,9 @@ Of course you can choose to use a different number of buttons and LEDs adapting 
 ## **The architecture**
 
 In the following picture you can see **3 components**: 
-1. the switching panel (with Arduino and some buttons and LEDs)
-2. a program (FS2020TA.exe) that manages the bidirectional communications with FS (you will find a link to this program later in this document)
-3. the Flight Simulator itself
+1. **the switching panel** (with Arduino and some buttons and LEDs)
+2. a program (**FS2020TA.exe**) that manages the bidirectional communications with FS (you will find a link to this program later in this document)
+3. the **Flight Simulator** itself
 
 The panel reads values and send commands to FS using the **FS2020TA.exe** (made by Seahawk240) as a sort of communication "repeater". The Arduino board communicates with the PC and FS2020TA.exe (that uses a SimConnect.dll) using a standard USB port. The communication protocol is very simple and will be explaned later.
 
@@ -87,11 +87,11 @@ About FS2020 variables, you can also find some useful info here: https://docs.fl
 ## **The communication protocol with FS2020TA**
 The communications is made simply sending and receiving strings over the USB connection of the PC. 
 
-### Receive values
-The sintax of a parameter received is **"@ID/index=value$"** where '@', '/' and '$' are markers to identify the 3 field "**ID**", "**index**" and "**value**". 
+### Receiving values/parameters from FS
+Every parameter is received as a string using "Serial.readStringUntil()" and the format is **"@ID/index=value$"** where '@', '/' and '$' are markers to identify the 3 field "**ID**", "**index**" and "**value**". 
 1. **ID** = idientifies each parameter
-2. **index** = idientifies different objects having the same parameter (for example index=1 for the "active frequency" of NAV1 but index=2 for NAV2)
-3. **value** = is the value itself and can be an integer, float, string, degree, boolean, etc depending of the kind of parameter
+2. **index** = idientifies different objects having the same parameter (for example index=1 for the "active frequency" of NAV1 and index=2 is the same for NAV2)
+3. **value** = is the value itself and can be interpreted as an integer, float, string, degree, boolean, etc depending of the kind of parameter
 
 Of course depending on the "ID" value, the program has to manage "value" converting it from a string to a number if necessary.
 
@@ -106,7 +106,7 @@ In this project all we need are the following IDs:
 #define LIGHT_STATES            474       // Light status mask
 ```
 
-### Send commands
+### Sending commands to FS
 To send a command to FS you have just to send a string using **Serial.print()** and this is the list of all the commands we need:
 ```
 /*************************************************************
