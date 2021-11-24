@@ -84,6 +84,39 @@ You can also find a video description here: https://www.youtube.com/watch?v=EVqY
 
 About FS2020 variables, you can also find some useful info here: https://docs.flightsimulator.com/html/index.htm#t=Programming_Tools%2FSimVars%2FSimulation_Variables.htm
 
+## **Define of I/O pins**
+Just to give you a bit more informations, i will show you wich pin i use in my project, but if you want change your Arduino board or for some other reasons you want to change your pins you will just change their "defines" accordingly.
+
+```
+/*************************************************************
+            Buttons and switches input pins
+ *************************************************************/
+#define IN_ENGINE_START       2
+#define IN_ENGINE_STOP        3
+#define IN_FLAPS_DEC          4
+#define IN_FLAPS_INC          5
+#define IN_PITOT_HEAT         6   // Switch 
+#define IN_LIGHTS_NAV         7
+#define IN_LIGHTS_LAND        8
+#define IN_RUDDER_TRIM_RIGHT  10
+#define IN_RUDDER_TRIM_LEFT   11
+
+/*************************************************************
+                     LEDs output pins
+ *************************************************************/
+#define OUT_LIGHTS_LAND       A0
+#define OUT_LIGHTS_NAV        A1
+#define OUT_FLAPS_1           A5 
+#define OUT_FLAPS_2           A4
+#define OUT_FLAPS_3           A3
+#define OUT_FLAPS_4           A2
+
+// ************** Optional buzzer on PIN 9 ****************
+// To activate it uncomment the following line
+//#define BUZZER_CONNECTED
+#define BUZZER_PIN            9 // Pin 9 for the buzzer
+```
+
 ## **Where to buy components**
 Sorry, coming soon.
 
