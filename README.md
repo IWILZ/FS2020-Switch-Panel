@@ -88,7 +88,7 @@ About FS2020 variables, you can also find some useful info here: https://docs.fl
 The communications is made simply sending and receiving strings over the USB connection of the PC. 
 
 ### Receive values
-The sintax of a parameter received is **"@ID/index=value$"** where '@', '/' and '$' are markers to identify the 3 values "**ID**", "**index**" and "**value**". 
+The sintax of a parameter received is **"@ID/index=value$"** where '@', '/' and '$' are markers to identify the 3 field "**ID**", "**index**" and "**value**". 
 1. **ID** = idientifies each parameter
 2. **index** = idientifies different objects having the same parameter (for example index=1 for the "active frequency" of NAV1 but index=2 for NAV2)
 3. **value** = is the value itself and can be an integer, float, string, degree, boolean, etc depending of the kind of parameter
