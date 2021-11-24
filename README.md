@@ -106,6 +106,24 @@ In this project all we need are the following IDs:
 #define LIGHT_STATES            474       // Light status mask
 ```
 
+**Just few words about LIGHT_STATES**
+LIGHT_STATESt is a (unsigned int) binary mask using 10 bits showing the state of every light of the plane with the following meaning:
+```
+// --00 0000 0000 -> *********** ALL LIGHTS OFF *********** 
+// --11 1111 1111 -> *********** ALL LIGHTS ON  *********** 
+// --00 0000 0001 -> light NAV         -> group NAV
+// --00 0000 0010 -> light BEACON      -> group NAV
+// --00 0000 0100 -> light LANDING     -> group LAND
+// --00 0000 1000 -> light TAXI        -> group LAND
+// --00 0001 0000 -> light STROBE      -> group NAV 
+// --00 0010 0000 -> light PANEL       -> group NAV 
+// --00 0100 0000 -> light RECOGNITION -> group LAND (probably unuseful)
+// --00 1000 0000 -> light WING        -> group NAV
+// --01 0000 0000 -> light LOGO        -> group NAV
+// --10 0000 0000 -> light CABIN       -> group NAV
+```
+In the program for simplicity i have collected the lights in **2 groups: NAV and LAND**. So for example, by pressing the "NAV" button, the following lights are switched on or off all together: NAV, BEACON, STROBE, PANEL, WING, LOGO, CABIN. 
+
 ### Sending commands to FS
 To send a command to FS you have just to send a string using **Serial.print()** and this is the list of all the commands we need:
 ```
