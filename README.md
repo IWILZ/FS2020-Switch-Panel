@@ -11,7 +11,7 @@ Unlike other solutions, this project will let you play with some Arduino program
 A short video here: https://www.youtube.com/watch?v=05aUgwHtf3Q
 
 ## **Why this project**
-I'm quite a beginner in the Arduino world but i'm also really interested in flight both simulated and real (Ultralight Planes). Few years ago i bought 5 **Arduino Nano** to build a Star Tracker: a camera-holder capable to rotate at the same rotation speed of the earth. That project was a solution to take photos (with long exposures) of the stars during the night but for that project i used only 1 of my 5 Arduino boards.
+I'm quite a beginner in the Arduino world but i'm also really interested in flight both simulated and real (Ultralight Planes). Few years ago i bought 5 **Arduino Nano** to build a Star Tracker: a camera-holder capable to rotate at the same rotation speed of the earth. That project was a solution to take steady photos (with long exposures) of the stars during the night but for that project i used only 1 of my 5 Arduino boards.
 
 Some months ago i bought the **Microsoft Flight Simulator 2020** and i use it with a Saitek X52 (so i have a lot of buttons for the main commands) but after a while i realized that i was having some problems for:
 1. reading the status of some parameters and values (for example on the Garmin display)
