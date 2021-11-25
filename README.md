@@ -108,7 +108,7 @@ In this project all we need are the following IDs:
 #define LIGHT_STATES            474       // Light status mask
 ```
 
-FS2020TA.exe sends continuously the above parameters ending each one with a '\n' (for example "@247/-1=2$\n" means that flaps are in second position).
+FS2020TA.exe sends continuously the above list of parameters ending each one with a '\n' (for example "@247/-1=2$\n" means that flaps are in second position).
 
 Inside the main loop() of the sketch, the program calls **GetParamFromFS2020()** function that simply reads the next string until '\n' and stores "ID", "index" and "value" into 3 global variables. After that the program manage this parameter switching on/off a corresponding LED.
 
