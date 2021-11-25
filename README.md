@@ -89,10 +89,10 @@ About FS2020 variables, you can also find some useful info here: https://docs.fl
 ## **The communication protocol with FS2020TA**
 The communications is made simply sending and receiving strings over the USB connection of the PC. 
 
-### Receiving values/parameters from FS
+### Reading values/parameters from FS
 Every parameter is received as a string using "Serial.readStringUntil()" and the format is **"@ID/index=value$"** where '@', '/' and '$' are markers to identify the 3 field "**ID**", "**index**" and "**value**". 
 1. **ID** = idientifies each parameter
-2. **index** = idientifies different objects having the same parameter. For example when ID=502 (NAV_ACTIVE_FREQUENCY), index=1 is for the frequency of NAV1 and index=2 is the same for NAV2.
+2. **index** = idientifies different objects having the same parameter. For example when ID=502 (NAV_ACTIVE_FREQUENCY), index=1 is for the frequency of NAV1 and index=2 is the same for NAV2. When there is only 1 object to identify, index=-1
 3. **value** = is the value itself and can be interpreted as an integer, float, string, degree, boolean, etc depending of the kind of parameter
 
 Of course depending on the "ID" value, the program has to manage "value" converting it from a string to a number if necessary.
@@ -107,6 +107,10 @@ In this project all we need are the following IDs:
 #define LIGHT_LANDING           464       // LIGHT LANDING
 #define LIGHT_STATES            474       // Light status mask
 ```
+
+FS2020TA.exe sends continuously the above parameters ending each one with a '\n' (for example "@247/-1=2$\n" means that flaps are in second position).
+
+Inside the main loop() of the sketch, the program calls **GetParamFromFS2020()** function that simply reads the next string until '\n' and stores "ID", "index" and "value" into 3 global variables. After that the program manage this parameter switching on/off a corresponding LED.
 
 **Just few words about LIGHT_STATES**
 
