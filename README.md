@@ -90,7 +90,7 @@ About FS2020 variables, you can also find some useful info here: https://docs.fl
 The communications is made simply sending and receiving strings over the USB connection of the PC. 
 
 ### Reading values/parameters from FS
-Every parameter is received as a string using "Serial.readStringUntil()" and the format is **"@ID/index=value$"** where '@', '/' and '$' are markers to identify the 3 field "**ID**", "**index**" and "**value**". 
+Every parameter is received as a string using "Serial.readStringUntil()" and the format is **"@ID/index=value$"** where '@', '/', '=' and '$' are markers to identify the 3 field "**ID**", "**index**" and "**value**". 
 1. **ID** = idientifies each parameter
 2. **index** = idientifies different objects having the same parameter. For example when ID=502 (NAV_ACTIVE_FREQUENCY), index=1 is for the frequency of NAV1 and index=2 is the same for NAV2. When there is only 1 object to identify, index=-1
 3. **value** = is the value itself and can be interpreted as an integer, float, string, degree, boolean, etc depending of the kind of parameter
