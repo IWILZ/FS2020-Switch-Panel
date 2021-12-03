@@ -17,7 +17,7 @@ Some months ago i bought the **Microsoft Flight Simulator 2020** and i use it wi
 1. reading the status of some parameters and values (for example on the Garmin display)
 2. managing other FS commands using the mouse during the flight 
 
-So in decided to start this first project using one of the Arduino Nano that i had in my drawer, trying to reach a good software architecture before building a more complex solution to manage and display also numeric values (like frequencies, altitude, air speed, etc) in a second project.
+So i decided to start this first project using one of the Arduino Nano that i had in my drawer, trying to reach a good software architecture before building a more complex solution to manage and display also numeric values (like frequencies, altitude, air speed, etc) in a second project.
 
 
 ## **What it does**
