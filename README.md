@@ -66,7 +66,7 @@ Optionally you can also use a little **5Vcc passive buzzer** (see the next pictu
 For the components you will find some links at the end of this document.
 
 ## **Input/Output connections**
-Every Arduino pin can be configured as an Input or an Output by the program so all it's very flexible. Obviously every LED connection has to be an Output (any output pin produces a 5Vcc when in high level) and every button/switch an Input but in this last case the program have to configure it like an "INPUT_PULLUP" pin to avoid problems with random status reading.
+Each Arduino pin can be configured as an Input or an Output by the program so all it's very flexible. Obviously every LED connection has to be an Output (any output pin produces a 5Vcc when in high level) and every button/switch an Input but in this last case the program have to configure it like an "INPUT_PULLUP" pin to avoid problems with random status reading.
 
 In the following picture you can see how to connect a generic LED and a generic button/switch.
 
