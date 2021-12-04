@@ -72,7 +72,8 @@ In the following picture you can see how to connect a generic LED and a generic 
 
 ![fig3](https://user-images.githubusercontent.com/94467184/142747592-85055ccf-bf22-468f-97f8-a19cade9ffb0.jpg)
 
-**IMPORTANT:** to avoid a damage of the micro controller itself **DON'T CONNECT A LED DIRECTLY to the Arduino**, but **use a resistor to limit the current** flowing to the LED. **The resistor value depends on the LED brand and colour** (normally red ones need a lower value resistor than green ones) but you could start with a value of **1KOhm** and then change it to find the right value/light for your LED. If you have a tester you can also measure the current flowing into the LED considering that the maximum current on a output PIN of the Arduino cannot **never exceed 20mA**. If you cannot measure the current, just look at your LED's light and don't exceed with its brightness. 
+### **About the resistor**  
+To avoid a damage of the micro controller itself **DON'T CONNECT A LED DIRECTLY to the Arduino**, but **use a resistor to limit the current** flowing to the LED. **The resistor value depends on the LED brand and colour** (normally red ones need a lower value resistor than green ones) but you could start with a value of **1KOhm** and then change it to find the right value/light for your LED. If you have a tester you can also measure the current flowing into the LED considering that the maximum current on a output PIN of the Arduino cannot **never exceed 20mA**. If you cannot measure the current, just look at your LED's light and don't exceed with its brightness. 
 
 Each button should be "normally opened" so it will "close the circuit" to the ground only when pressed.
 
