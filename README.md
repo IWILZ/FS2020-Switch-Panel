@@ -196,7 +196,7 @@ Just to give you a bit more informations, i will show you wich pin i use in my p
 #define BUZZER_PIN            9 // Pin 9 for the buzzer
 ```
 
-## **Where to buy components**
+## **Where to shop**
 1. Arduino Nano - https://www.amazon.it/gp/product/B01FRZW24O/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&psc=1
 2. Buttons - https://www.amazon.it/gp/product/B082DBBPGC/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&psc=1
 3. Breadboards - https://www.amazon.it/gp/product/B073WR78M6/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&psc=1
