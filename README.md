@@ -201,7 +201,8 @@ Just to give you a bit more informations, i will show you wich pin i use in my p
 2. Buttons - https://www.amazon.it/gp/product/B082DBBPGC/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&psc=1
 3. Breadboards - https://www.amazon.it/gp/product/B073WR78M6/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&psc=1
 4. LEDs - https://www.amazon.it/gp/product/B06X3VT6TD/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
-5. LED rings - https://www.amazon.it/gp/product/B01MRVAFGK/ref=ppx_yo_dt_b_asin_title_o09_s00?ie=UTF8&psc=1
-6. Wires - https://www.amazon.it/gp/product/B074P726ZR/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1
+5. Resistors - https://www.amazon.it/ARCELI-resistore-Utilizzare-colorato-Resistenza/dp/B07PVVFMHD/ref=sr_1_6
+6. LED rings - https://www.amazon.it/gp/product/B01MRVAFGK/ref=ppx_yo_dt_b_asin_title_o09_s00?ie=UTF8&psc=1
+7. Wires - https://www.amazon.it/gp/product/B074P726ZR/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1
 
 
