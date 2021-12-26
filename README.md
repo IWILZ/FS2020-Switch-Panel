@@ -19,6 +19,8 @@ Some months ago i bought the **Microsoft Flight Simulator 2020** and i use it wi
 
 So i decided to start this first project using one of the Arduino Nano that i had in my drawer, trying to reach a good software architecture before building a more complex solution to manage and display also numeric values (like frequencies, altitude, air speed, etc) in a second project.
 
+At this time you can find also my second project here: https://github.com/IWILZ/FS2020-LCD-Panel
+
 
 ## **What it does**
 The panel manages and shows the state of:
